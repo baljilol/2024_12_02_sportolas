@@ -1,0 +1,175 @@
+body{
+    background-color: aqua;
+    background-image: url(hatterkep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: justify;
+
+}
+
+main{
+    width: 75%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "article article aside"
+    "section section section"
+    "footer footer footer";
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 4px;
+}
+
+#main2{
+    width: 75%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "article aside"
+    "footer footer";
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 4px;
+}
+
+article{
+    grid-area: article;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+header{
+    grid-area: header;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+nav{
+    grid-area: nav;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+aside{
+    grid-area: aside;
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 4px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "vid"
+    "nev";
+}
+
+#vid{
+    grid-area: vid;
+}
+
+aside>#vid>iframe{
+    width: 70%;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#nev{
+    grid-area: nev;
+}
+
+section{
+    grid-area: section;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h3 h3 h3" 
+    "sport1 sport2 sport3";
+}
+
+footer{
+    grid-area: footer;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+#sport1{
+    grid-area: sport1;
+}
+
+#sport2{
+    grid-area: sport2;
+}
+
+#sport3{
+    grid-area: sport3;
+}
+
+header>img{
+    width: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 3vw; 
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+article>img{
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+article>#img2{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+}
+
+section>div>img{
+    width: 90%;
+}
+
+footer>p{
+    text-align: center;
+}
